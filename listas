@@ -1,1 +1,88 @@
+# EXERCÍCIO 01
+primeiro_valor = int(input("Primeiro valor: "))
+segundo_valor = int(input("Segundo valor: "))
+soma = primeiro_valor + segundo_valor
+print(f"Soma: {soma}")
 
+# EXERCÍCIO 02
+nota1 = float(input("Nota 1: ").replace(',', '.'))
+nota2 = float(input("Nota 2: ").replace(',', '.'))
+media = (nota1 + nota2) / 2
+print(f"Média: {media:.1f}".replace('.', ','))
+
+# EXERCÍCIO 03
+num = int(input("Digite um número: "))
+print(f"Antecessor: {num - 1}")
+print(f"Número: {num}")
+print(f"Sucessor: {num + 1}")
+
+# EXERCÍCIO 04
+num = float(input("Digite um valor: ").replace(',', '.'))
+print(f"Dobro: {num * 2:g}".replace('.', ','))
+print(f"Triplo: {num * 3:g}".replace('.', ','))
+print(f"Metade: {num / 2:g}".replace('.', ','))
+
+# EXERCÍCIO 05
+metros = float(input("Metros: ").replace(',', '.'))
+centimetros = int(metros * 100)
+milimetros = int(metros * 1000)
+print(f"Centímetros: {centimetros}")
+print(f"Milímetros: {milimetros}")
+
+# EXERCÍCIO 06
+largura = float(input("Largura: ").replace(',', '.'))
+altura = float(input("Altura: ").replace(',', '.'))
+area = largura * altura
+perimetro = 2 * (largura + altura)
+print(f"Área: {area:g}".replace('.', ','))
+print(f"Perímetro: {perimetro:g}".replace('.', ','))
+
+# EXERCÍCIO 07
+celsius = float(input("Temperatura em °C: ").replace(',', '.'))
+fahrenheit = (celsius * 9 / 5) + 32
+print(f"Temperatura em °F: {fahrenheit:g}".replace('.', ','))
+
+# EXERCÍCIO 08
+preco = float(input("Preço: R$ ").replace('.', '').replace(',', '.'))
+desconto = preco * 0.10
+preco_final = preco - desconto
+print(f"Desconto: R$ {desconto:.2f}".replace('.', ','))
+print(f"Preço final: R$ {preco_final:.2f}".replace('.', ','))
+
+# EXERCÍCIO 09
+salario = float(input("Salário atual: R$ ").replace('.', '').replace(',', '.'))
+aumento = salario * 0.15
+novo_salario = salario + aumento
+print(f"Aumento: R$ {aumento:.2f}".replace('.', ','))
+print(f"Novo salário: R$ {novo_salario:.2f}".replace('.', ','))
+
+# EXERCÍCIO 10
+salario_fixo = float(input("Salário fixo: R$ ").replace('.', '').replace(',', '.'))
+total_vendido = float(input("Total vendido: R$ ").replace('.', '').replace(',', '.'))
+comissao = total_vendido * 0.04
+salario_total = salario_fixo + comissao
+print(f"Comissão: R$ {comissao:.2f}".replace('.', ','))
+print(f"Salário total: R$ {salario_total:.2f}".replace('.', ','))
+
+# EXERCÍCIO 14 (Lembrando que os exercícios 11, 12 e 13 não constam no material)
+a = int(input("A: "))
+b = int(input("B: "))
+
+auxiliar = a
+a = b
+b = auxiliar
+
+print("Depois da troca:")
+print(f"A: {a}")
+print(f"B: {b}")
+
+# EXERCÍCIO 15
+preco_unitario = float(input("Preço unitário: R$ ").replace('.', '').replace(',', '.'))
+quantidade = int(input("Quantidade: "))
+frete = float(input("Frete: R$ ").replace('.', '').replace(',', '.'))
+
+subtotal = preco_unitario * quantidade
+total = subtotal + frete
+
+print(f"Subtotal: R$ {subtotal:.2f}".replace('.', ','))
+print(f"Total: R$ {total:.2f}".replace('.', ','))
